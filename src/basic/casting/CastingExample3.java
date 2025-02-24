@@ -1,4 +1,4 @@
-package basic.datatype;
+package basic.casting;
 
 public class CastingExample3 {
     public static void main(String[] args) {
