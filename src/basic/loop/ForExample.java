@@ -41,7 +41,7 @@ public class ForExample {
         }
         int answer = num;
         for (int z = num-1; z > 0; z--) {
-            answer = answer * z ;
+            answer *=  z ;
         }
         System.out.println("answer = " + answer);
         sc.close();
