@@ -1,5 +1,12 @@
-package oop.this_;
+package oop.poly.Player;
 
+/*
+    # 부모 클래스, 상위 클래스 (Parent, super class)
+
+    - 데이터를 다른 클래스에게 상속하는 클래스를 부모 클래스라고 부릅니다.
+    - 상속을 사용하면 데이터를 물려받는 클래스에게 부모 클래스의
+     멤버변수(필드)와 메서드가 상속됩니다. 단, 생성자는 상속되지 않습니다.
+*/
 public class Player {
 
     // 필드
@@ -20,7 +27,6 @@ public class Player {
 
         //this를 사용하지 않을거라면 인자에 받는 매개변수명을 필드와 같지 않게 한다.
         this.nickName = nickName;
-
     }
 
     Player(String nickName, int hp) {
@@ -58,5 +64,12 @@ public class Player {
                 ", level=" + level +
                 ", hp=" + hp +
                 '}';
+    }
+
+    public void  showStatus(){
+        System.out.println("# nickName = " + this.nickName);
+        System.out.println("# level = " + this.level);
+        System.out.println("# hp = " + this.hp);
+
     }
 }
