@@ -1,4 +1,4 @@
-package oop.inherit;
+package oop.inherit.product;
 
 public class Main {
     public static void main(String[] args) {

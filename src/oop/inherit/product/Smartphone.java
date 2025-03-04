@@ -1,4 +1,4 @@
-package oop.inherit;
+package oop.inherit.product;
 
 public class Smartphone extends ElectronicProduct {
 
@@ -12,6 +12,6 @@ public class Smartphone extends ElectronicProduct {
     @Override
     void displayInfo() {
         super.displayInfo();
-        System.out.printf(", 저장용량: %d\n", storageCapacity);
+        System.out.printf(", 저장용량: %d GB\n", storageCapacity);
     }
 }

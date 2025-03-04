@@ -1,6 +1,6 @@
-package oop.static_;
+package oop.static_.practice;
 
-import static oop.static_.Store.addSales;
+import static oop.static_.practice.Store.addSales;
 
 public class Product {
     String productName;

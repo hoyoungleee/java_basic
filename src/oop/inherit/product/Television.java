@@ -1,4 +1,4 @@
-package oop.inherit;
+package oop.inherit.product;
 
 public class Television extends ElectronicProduct {
 
@@ -12,6 +12,6 @@ public class Television extends ElectronicProduct {
     @Override
     void displayInfo() {
         super.displayInfo();
-        System.out.printf(", 화면사이즈: %d\n", screenSize);
+        System.out.printf(", 화면사이즈: %d inches\n", screenSize);
     }
 }

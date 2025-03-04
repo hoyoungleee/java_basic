@@ -1,4 +1,4 @@
-package oop.static_;
+package oop.static_.practice;
 
 public class Store {
     private static int totalSales;//총 판매액
@@ -11,11 +11,5 @@ public class Store {
     public static int getTotalSales() {
         return totalSales;
     }
-    public static void setTotalSales(int totalSales) {
-        Store.totalSales = totalSales;
-    }
-
-
-
 
 }

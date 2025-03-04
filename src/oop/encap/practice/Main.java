@@ -1,4 +1,4 @@
-package oop.encap;
+package oop.encap.practice;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package oop.inherit;
+package oop.inherit.product;
 
 public class ElectronicProduct {
     String productName;
