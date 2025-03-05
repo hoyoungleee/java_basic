@@ -1,6 +1,8 @@
 package etc.api.time;
 
 import java.time.*;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 public class DateExample {
@@ -65,5 +67,38 @@ public class DateExample {
         // 지금부터 9개월 23일전
         LocalDateTime localDateTime2 = now2.minusMonths(9).minusDays(23);
         System.out.println("localDateTime2 = " + localDateTime2);
+
+        // 사이 날짜 연산
+        LocalDate b = LocalDate.of(2020, 12, 30);
+        LocalDate f = LocalDate.of(2022, 9, 14);
+        //해당 날짜 간 일 차이
+        long between = ChronoUnit.DAYS.between(b, f);
+        System.out.println("between = " + between);
+
+        //해당 날짜 간 주 차이
+        long between2 = ChronoUnit.WEEKS.between(b, f);
+        System.out.println("between = " + between2);
+
+        //해당 날짜 간 월 차이
+        long between3 = ChronoUnit.MONTHS.between(b, f);
+        System.out.println("between = " + between3);
+
+        //해당 날짜 간 연 차이
+        long between4 = ChronoUnit.YEARS.between(b, f);
+        System.out.println("between = " + between4);
+
+        System.out.println("=======================================");
+
+        System.out.println(now2);
+
+        // 날짜 포맷 변경하기
+        //yyyy(년), MM(월), dd(일), E(요일), a(오전,오후), hh(12시간기준), HH(24시간), mm(분),  ss(초)
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy년 MM월 dd일 E요일 a hh시 mm분 ss초");
+
+        //준비한 DateTimeFormatter 객체를 format()의 매개값으로 전달.
+        String formatDate = now2.format(dtf);
+        System.out.println("formatDate = " + formatDate);
+
+
     }
 }
