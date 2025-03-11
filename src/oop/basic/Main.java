@@ -1,6 +1,7 @@
 package oop.basic;
 
 public class Main {
+    
 
     /*
     설계도에 작성된 것만으로 구현이 안됨.
