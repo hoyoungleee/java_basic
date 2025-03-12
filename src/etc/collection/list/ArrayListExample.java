@@ -82,7 +82,7 @@ public class ArrayListExample {
            Collections는 컬렉션 객체들의 부가 기능들을 제공합니다.
         */
 
-        List<Integer> score  = new ArrayList<>();
+        List<Integer> score = new ArrayList<>();
 
         // 원래라면 객체 생성해야하나 오토 박싱/ 언박싱 지원
         //score.add(new Integer(645));
