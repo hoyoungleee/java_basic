@@ -84,5 +84,43 @@ public class Main {
         System.out.println("filter1 = " + filter1);
 
 
+        List<String> foods = List.of("짜장면", "짬뽕", "탕수육", "피자", "삼겹살", "파스타");
+
+        List<String> filterFood = FilterApple.filter(foods,
+                food -> food.length() > 2);
+
+        for (String s : filterFood) {
+            System.out.println("s = " + s);
+        }
+
+        System.out.println("-----------------------------------------------------");
+        // 이번에는 사과의 색상만 싹 뽑아서 리스트로 받자.
+        List<Color> colors = MappingApple.mappingAppleByColor(appleBasket);
+        System.out.println("colors = " + colors);
+
+        System.out.println("-----------------------------------------------------");
+
+        //사과의 무게만 뽑기
+        List<Integer> map1 = MappingApple.map(appleBasket,
+                new GenericFuntion<Apple, Integer>() {
+                    @Override
+                    public Integer apply(Apple apple) {
+                        return apple.getWeight();
+                    }
+                }
+        );
+        System.out.println("map1 = " + map1);
+
+
+        System.out.println("-------------------숫자를 제곱으로 리턴---------------------------");
+
+        List<Integer> map2 = MappingApple.map(numbers, n -> n*n);
+        System.out.println("map2 = " + map2);
+
+        System.out.println("-------------------음식을 주면 첫글자만 뽑아와---------------------------");
+        List<Character> map3 = MappingApple.map(foods, food -> food.charAt(0));
+        System.out.println("map3 = " + map3);
+
+
     }
 }

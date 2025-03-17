@@ -100,7 +100,7 @@ public class ArrayListExample {
         System.out.println("score = " + score);
 
         // 컬렉션 내의 객체의 개수 구하기
-        System.out.println("100점 학생수:" + Collections.frequency(score,345));
+        System.out.println("345점 학생수:" + Collections.frequency(score,345));
 
         // 최대값, 최소값
         System.out.println("최대값: " + Collections.max(score));
